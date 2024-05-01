@@ -1,0 +1,7 @@
+
+### Test lat,lon but you must add {{YOUR_API_KEY}} to IntelliJ env
+< {%
+    request.variables.set("lat", `42.278046`)
+    request.variables.set("lon", `-83.738220`)
+%}
+https://api.openweathermap.org/data/2.5/weather?lat={{lat}}&lon={{lon}}&appid={{YOUR_API_KEY}}
